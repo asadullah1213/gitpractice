@@ -3,6 +3,7 @@
   background-color: #ffffff;
   padding: 1rem 0;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  height: 2rem;
 }
 
 .header-container {
@@ -13,13 +14,22 @@
   justify-content: space-between;
   align-items: center;
 }
+.logo{
+  display: flex;
+  align-items: centers;
+}
 
 .logo h1 {
   margin: 0;
-  font-size: 1.8rem;
+  font-size: 2.4rem;
   color: #333;
+  height: 1rem;
 }
-
+.logo h1 img{
+  height: 1.9rem;
+  position: relative;
+  top: -3px;
+}
 .nav-menu ul {
   list-style: none;
   padding: 0;
@@ -33,6 +43,7 @@
   color: #333;
   font-weight: 500;
   transition: color 0.3s ease;
+  font-size: 1.3rem;
 }
 
 .nav-menu a:hover {

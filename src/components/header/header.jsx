@@ -1,12 +1,13 @@
 import React from 'react';
 import './header.css';
-
+import  Logo from '../body/img/ico.png';
 const Header = () => {
   return (
     <header className="header">
       <div className="header-container">
         <div className="logo">
-          <h1>Logo</h1>
+          <h1><img src={Logo} alt="Logo" /></h1>
+         
         </div>
         <nav className="nav-menu">
           <ul>
