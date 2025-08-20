@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    width: 90vw;
+    height: 100%;
+    margin: 4rem auto;
+    background: red;
+    display: flex;
+
+}
+
+main .left_side {
+    margin: 11rem 2rem;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+}
+
+.left_side .heading_box button{
+    height: 3rem;
+    width: 7rem;
+    margin: 4rem 1rem;
+}
+main .right_side {
+    background-color: yellow;
+    width: 100%;
+    /* height: 100%; */
+}
