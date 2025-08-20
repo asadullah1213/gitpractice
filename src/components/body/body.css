@@ -4,29 +4,33 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-main {
-    width: 90vw;
-    height: 100%;
-    margin: 4rem auto;
-    background: red;
+.body_container{
     display: flex;
-
+    margin: 1rem auto;
+    /* background-color: red; */
+    justify-content: space-between;
 }
-
-main .left_side {
-    margin: 11rem 2rem;
+.body_container .left_side{
+    margin: 5rem 3rem;
+}
+.body_container .right_side{
+    margin: 3rem 5rem;
+}
+.left_side .heading_box {
     background-color: white;
-    width: 100%;
-    height: 100%;
+    padding: 2rem;
+    margin: 8rem 0rem ;
 }
 
-.left_side .heading_box button{
-    height: 3rem;
-    width: 7rem;
-    margin: 4rem 1rem;
+.heading_box h1{
+    font-size: 3rem;
 }
-main .right_side {
-    background-color: yellow;
-    width: 100%;
-    /* height: 100%; */
+.heading_box span {
+    color: gold;
+}
+.heading_box button{
+    margin: 3rem 0rem;
+    color: red;
+    height: 4rem;
+    width: 7rem;
 }
