@@ -1,0 +1,37 @@
+    .service{
+        margin: 4rem 3rem;
+        background-color: rgb(230, 230, 230);
+        border-radius: 1rem;
+          box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    .service .heading {
+        text-align: center;
+        margin-bottom: 2rem;
+        padding-top: 2rem;
+    }
+    .detail_service{
+        display: flex;
+        padding: 3rem 10rem;
+
+    }
+    .left_side{
+        margin: 0rem 4rem;
+    }
+    .left_side img{
+        height: 30rem;
+    }
+    .right_side h1{
+       margin-bottom: 2rem;
+    }
+    .right_side h1 span{
+        color: blue;
+    }
+    .right_side p{
+        font: 300;
+        font-size: 1.3rem;
+        font-family: sans-serif ;
+    }
+    .right_side p li{
+        margin: 1rem 0rem;
+    }
