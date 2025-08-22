@@ -1,3 +1,8 @@
+    :root {
+       --main-color :rgb(57 165 114);
+    }
+    
+    
     .service{
         margin: 4rem 3rem;
         background-color:rgb(254 253 209 / 0%);
@@ -28,7 +33,7 @@
        margin-bottom: 2rem;
     }
     .right_side h1 span{
-        color: blue;
+        color: rgb(57 165 114);
     }
     .right_side p{
         font: 300;
@@ -40,7 +45,7 @@
         margin: 1rem 0rem;
     }
     .right_side #learn-btn{
-        background-color: blue;
+        background-color:var(--main-color);
         border: none;
         margin-top: 1rem;
         height: 2rem;
