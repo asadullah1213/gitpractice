@@ -14,8 +14,8 @@
 }
 .login_main .login_form{
     width: 40rem;
-    background-color: rgb(244, 244, 244);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #979797;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     height: 40rem;
     border-radius: 3%;
 }
@@ -27,7 +27,7 @@
 }
 .menu_btn button{
     height: 4rem;
-   background-color:#2ecc71;
+   background-color:#B1BED5;
     border: none;
     text-align: center;
     align-items: center;
@@ -38,4 +38,9 @@
      /* margin: 0rem 2rem; */
      border: 1px solid white;
      border-top-left-radius:3% ;
+}
+#sgn{
+    background-color: white;
+    border-top: 1px solid  #B1BED5 ;
+    border-right: 1px solid #B1BED5;
 }

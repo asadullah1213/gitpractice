@@ -3,12 +3,34 @@
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    width: 33rem;
-    justify-content: center;
-    align-items: center;
-    background-color: red ;
+    /* width: 33rem; */
+    color: black;
+    /* background-color: red ; */
+}
+.data_form{
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 1rem;
+    color: white;
 }
 .form input{
     height: 4rem;
-    width: 28rem;
+    border-radius: 2rem;
+    border: none;
+    margin: 1rem 0rem;
+}
+.form input::placeholder{
+    margin: 0rem 2rem;
+    padding: 0rem 2rem;
+    font-size: 2rem;
+}
+.data_form span{
+    color: black;
+    margin: 0rem 1rem;
+}
+.from:nth-child(1){
+    background-color: white;
+}
+.form{
+    color: rgb(0, 0, 0);
 }

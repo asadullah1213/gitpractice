@@ -7,8 +7,8 @@ function login() {
    <main className='login_main'>
       <div className="login_form">
         <div className="menu_btn">
-          <button>LOGIN</button>
-          <button>SIGNUP</button>
+          <button id='lgn'>LOGIN</button>
+          <button id='sgn'>SIGNUP</button>
         </div>
 
         <div className="existed">
