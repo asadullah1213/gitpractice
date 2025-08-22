@@ -5,18 +5,15 @@ import Service from './components/service/service.jsx'
 
 import Servicebox from './components/service-box/service-box.jsx'
 
-function Main_page() {
+function MainPage() {
   return (
     <>
-    <Header/>
-    <Body/>
-    <Service/>
-    <Servicebox/>
-    
-    
-    
+      <Header/>
+      <Body/>
+      <Service/>
+      <Servicebox/>
     </>
   )
 }
 
-export default Main_page
+export default MainPage;

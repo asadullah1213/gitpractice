@@ -1,42 +1,36 @@
 import React, { useState } from "react";
 import "./existed.css";
-
+import { Navigate } from "react-router-dom";
 
 const admin = {
-  username : "admin@gmail.com",
-  passwords : "password"
-}
-
-
-
+  username: "admin@gmail.com",
+  passwords: "password",
+};
 
 function ExistingUser() {
+  const [auth, setAuth] = useState(false);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [storedEmail, setStoredEmail] = useState("");
-  const [storedPass, setStoredPass] = useState("");
-  const handleUserEmail = (event) => {
-    setEmail(event.target.value);
-  };
 
-  const handleUserPassword = (event) => {
-    setPassword(event.target.value);
-  };
+  const handleUserEmail = (event) => setEmail(event.target.value);
+  const handleUserPassword = (event) => setPassword(event.target.value);
 
   const handleSubmit = (event) => {
     event.preventDefault();
     localStorage.setItem("email", JSON.stringify(email));
     localStorage.setItem("passwd", JSON.stringify(password));
-    setStoredPass(password)
-    setStoredEmail(email);
 
-    console.log('Email:', email);
-    console.log('Password:', password);
-
-    if (email === admin.username && password === admin.passwords){
-          alert("hello")
+    if (email === admin.username && password === admin.passwords) {
+      setAuth(true);
+      localStorage.setItem("isAuth", true);
+    } else {
+      alert("Invalid credentials");
     }
   };
+
+  if (auth) {
+    return <Navigate to="/access" replace />;
+  }
 
   return (
     <>
@@ -61,10 +55,10 @@ function ExistingUser() {
             />
           </div>
         </div>
-        <button id='login' type='submit'>Login</button>
+        <button id="login" type="submit">
+          Login
+        </button>
       </form>
-
-     
     </>
   );
 }

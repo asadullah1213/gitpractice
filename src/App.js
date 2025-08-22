@@ -1,17 +1,24 @@
 import React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Main_page from './main_page.jsx';
+import MainPage from './main_page.jsx';
 import Login from './login_form/login.jsx';
+import ProtectedRoute from './protectedrouter.jsx';
 
 function App() {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <Main_page />
+      element: <Login />
     },
     {
-      path: "/login",
-      element: <Login />
+      path: "/access",
+      element: <ProtectedRoute />, // Protect this route
+      children: [
+        {
+          path: "",
+          element: <MainPage />
+        }
+      ]
     }
   ]);
 
