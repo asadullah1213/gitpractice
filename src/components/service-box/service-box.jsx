@@ -8,7 +8,7 @@ const icons = {
   handshake: <FontAwesomeIcon icon={faHandshake} />,
 };
 
-function servicebox() {
+function Servicebox() {
   return (
     <>
       <main className="ServiceBox">
@@ -69,4 +69,4 @@ function servicebox() {
   );
 }
 
-export default servicebox;
+export default Servicebox;

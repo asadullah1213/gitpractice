@@ -1,26 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
 import React from 'react';
-import Header from './components/header/header.jsx';
-import Body from './components/body/body.jsx';
-import Service from "./components/service/service.jsx"
-import Servicebox from './components/service-box/service-box.jsx';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Main_page from './main_page.jsx';
 import Login from './login_form/login.jsx';
 
 function App() {
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Main_page />
+    },
+    {
+      path: "/login",
+      element: <Login />
+    }
+  ]);
 
-  
   return (
-    <div className="App">
-
-
-      {/* <Header />
-      <Body />
-      <Service />
-      <Servicebox /> */}
-      <Login />
-
-    </div>
+    <RouterProvider router={router} />
   );
 }
 

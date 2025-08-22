@@ -1,11 +1,20 @@
 import React, { useState } from "react";
 import "./existed.css";
 
+
+const admin = {
+  username : "admin@gmail.com",
+  passwords : "password"
+}
+
+
+
+
 function ExistingUser() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [storedEmail, setStoredEmail] = useState("");
-
+  const [storedPass, setStoredPass] = useState("");
   const handleUserEmail = (event) => {
     setEmail(event.target.value);
   };
@@ -18,9 +27,15 @@ function ExistingUser() {
     event.preventDefault();
     localStorage.setItem("email", JSON.stringify(email));
     localStorage.setItem("passwd", JSON.stringify(password));
-    setStoredEmail(email); // update state to show email
+    setStoredPass(password)
+    setStoredEmail(email);
+
     console.log('Email:', email);
     console.log('Password:', password);
+
+    if (email === admin.username && password === admin.passwords){
+          alert("hello")
+    }
   };
 
   return (
@@ -49,9 +64,7 @@ function ExistingUser() {
         <button id='login' type='submit'>Login</button>
       </form>
 
-      <h1>
-        hi {storedEmail}
-      </h1>
+     
     </>
   );
 }
