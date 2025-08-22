@@ -1,0 +1,14 @@
+.form{
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 33rem;
+    justify-content: center;
+    align-items: center;
+    background-color: red ;
+}
+.form input{
+    height: 4rem;
+    width: 28rem;
+}

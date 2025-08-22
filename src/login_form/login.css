@@ -27,12 +27,13 @@
 }
 .menu_btn button{
     height: 4rem;
-   background-color: rgb(57 165 114);
+   background-color:#2ecc71;
     border: none;
     text-align: center;
     align-items: center;
     justify-content: center;
      flex-grow: 1;
+     overflow: hidden;
      display: flex;
      /* margin: 0rem 2rem; */
      border: 1px solid white;
