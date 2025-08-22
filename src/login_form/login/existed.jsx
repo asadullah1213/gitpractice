@@ -4,6 +4,7 @@ import "./existed.css";
 function ExistingUser() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [storedEmail, setStoredEmail] = useState("");
 
   const handleUserEmail = (event) => {
     setEmail(event.target.value);
@@ -15,13 +16,12 @@ function ExistingUser() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    localStorage.setItem("email", JSON.stringify(email));
+    localStorage.setItem("passwd", JSON.stringify(password));
+    setStoredEmail(email); // update state to show email
     console.log('Email:', email);
     console.log('Password:', password);
-
   };
-
-
-  
 
   return (
     <>
@@ -48,6 +48,10 @@ function ExistingUser() {
         </div>
         <button id='login' type='submit'>Login</button>
       </form>
+
+      <h1>
+        hi {storedEmail}
+      </h1>
     </>
   );
 }
