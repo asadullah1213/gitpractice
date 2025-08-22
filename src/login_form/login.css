@@ -44,3 +44,14 @@
     border-top: 1px solid  #B1BED5 ;
     border-right: 1px solid #B1BED5;
 }
+#login{
+
+    width: 9rem;
+    height: 3rem;
+    border-radius: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border: none;
+}
