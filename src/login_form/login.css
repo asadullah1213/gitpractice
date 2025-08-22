@@ -1,0 +1,40 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    
+
+}
+
+.login_main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login_main .login_form{
+    width: 40rem;
+    background-color: rgb(255, 255, 255);
+    box-shadow: -7px 1px 65px -16px gray;
+    height: 40rem;
+    border-radius: 3%;
+}
+
+.login_main .menu_btn{
+    
+    display: flex;
+   
+}
+.menu_btn button{
+    height: 4rem;
+    background-color: lightskyblue;
+    border: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+     flex-grow: 1;
+     display: flex;
+     /* margin: 0rem 2rem; */
+     border: 1px solid white;
+     border-top-left-radius:3% ;
+}
